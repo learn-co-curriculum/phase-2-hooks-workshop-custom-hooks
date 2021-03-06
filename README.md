@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Custom Hooks Workshop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup
 
-## Available Scripts
+Clone and download this repo, and run `npm install`. Then:
 
-In the project directory, you can run:
+- Run `npm test` to run tests in one terminal tab
+- Open another terminal tab, and run `npm start` to run the project in the
+  browser
 
-### `yarn start`
+In the tab that is running tests, you can press the `p` key to select a specific
+test file to run. For example, hitting `p` and then typing `01.js` will run the
+first test.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instructions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The `src` directory has two folders: one for the `solution` code, and one for
+the exercises. You'll be working in the `exercise` folder.
 
-### `yarn test`
+- `src/exercise/01.js`: Exercise (write your code here)
+- `src/exercise/01.md`: Deliverables and helpful notes
+- `src/__tests__/01.js`: Exercise test
+- `src/__tests__/01.extra-1.js`: Test for extra credit exercise
+- `src/solution/01.js`: Solution code (check your work, or look for a hint if
+  you're stuck)
+- `src/solution/01.extra-1.js`: Solution code for extra credit exercise
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Each deliverable in the `exercise` folder has comments to guide your work!
 
-### `yarn build`
+There are some emoji to guide you in the exercises:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ✅ Instructions where to write your code
+- 👀 A hint on what syntax to use/what code to write
+- 📃 Helpful documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> All credit to [Kent C Dodds](https://kentcdodds.com/) for the emoji guide
+> idea, and general inspiration for this workshop format!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When running the workshop app in the browser, you can see the readme for each
+exercise alongside a sandbox where you can view your exercise code to see if it
+works. You can also open up your exercise code in a new browser tab to view the
+exercise alone, and more easily see what's happening in the React Dev Tools.
 
-### `yarn eject`
+You can also view working examples of the code in the browser by clicking the
+solution tab.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Some exercises have bonus challenges to do for extra credit, so if you finish
+early, give them a shot! Or save them for later when you want to revisit these
+exercises.
