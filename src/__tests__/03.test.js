@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react-hooks/pure";
 import { fireEvent } from "@testing-library/react";
-// import { useMouseCoordinates } from "../exercise/03";
-import { useMouseCoordinates } from "../solution/03";
+import { useMouseCoordinates } from "../exercise/03";
+// import { useMouseCoordinates } from "../solution/03";
 
 describe("Exercise 03", () => {
   test("returns an initial state with 0, 0 as the mouse coordinates", () => {

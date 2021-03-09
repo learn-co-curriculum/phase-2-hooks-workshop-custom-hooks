@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react-hooks/pure";
 import { server } from "../data/mocks/server";
-// import { usePokemon } from "../exercise/02";
-import { usePokemon } from "../solution/02";
+import { usePokemon } from "../exercise/02";
+// import { usePokemon } from "../solution/02";
 
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
