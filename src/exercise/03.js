@@ -25,7 +25,7 @@ export function useMouseCoordinates() {
     return function cleanup() {
       /* 
        ✅ make sure to clean up your event listeners when your hook is no longer in use!
-       👀 window.remove("mousemove", handler)
+       👀 window.removeEventListener("mousemove", handler)
       */
     };
   }, []);
