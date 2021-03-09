@@ -37,7 +37,7 @@ export default function App() {
 }
 
 function Form() {
-  const [name, setName] = useLocalStorage("username", "");
+  const [name, setName] = useLocalStorage("_solution_2_username", "");
   return (
     <form style={{ display: "flex", flexDirection: "column" }}>
       <label htmlFor="name">Name:</label>
@@ -48,7 +48,7 @@ function Form() {
 }
 
 function FormWithObject() {
-  const [formData, setFormData] = useLocalStorage("blog_post", {
+  const [formData, setFormData] = useLocalStorage("_solution_2_blog_post", {
     title: "",
     content: "",
   });

@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import React, { useEffect, useState } from "react";
 
 export function usePokemon(query) {
@@ -12,35 +13,12 @@ export function usePokemon(query) {
   return { data: pokemon };
 }
 
-function PokeSearch() {
-  const [query, setQuery] = useState("charmander");
-
+function Pokemon({ query }) {
   const { data: pokemon } = usePokemon(query);
 
-  return (
-    <div>
-      <PokeForm query={query} setQuery={setQuery} />
-      <Pokemon pokemon={pokemon} />
-    </div>
-  );
-}
-
-function PokeForm({ query, setQuery }) {
-  function handleSubmit(e) {
-    e.preventDefault();
-    setQuery(e.target.search.value);
-  }
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="search" defaultValue={query} />
-      <button type="submit">Search</button>
-    </form>
-  );
-}
-
-function Pokemon({ pokemon }) {
+  // 🚫 don't worry about the code below here, you shouldn't have to touch it
   if (!pokemon) return <h3>Loading...</h3>;
+
   return (
     <div>
       <h3>{pokemon.name}</h3>
@@ -52,4 +30,48 @@ function Pokemon({ pokemon }) {
   );
 }
 
-export default PokeSearch;
+export default function App() {
+  const [query, setQuery] = useState("charmander");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setQuery(e.target.search.value);
+  }
+
+  return (
+    <Wrapper>
+      <h1>PokéSearcher</h1>
+      <Pokemon query={query} />
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="search" defaultValue={query} />
+        <button type="submit">Search</button>
+      </form>
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.section`
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  display: grid;
+  place-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: papayawhip;
+  text-align: center;
+
+  h1 {
+    background: #ef5350;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+  }
+`;

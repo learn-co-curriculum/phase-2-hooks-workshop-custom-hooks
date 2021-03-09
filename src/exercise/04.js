@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 
-/* ✅ update this function so it takes in two arguments: a key and an initial value */
-export function useLocalStorage() {
+/* 
+  the two parameters for this function are: 
+  - key: the key on localStorage where we are saving this data
+  - initialValue: the initial value of state
+*/
+export function useLocalStorage(key, initialValue) {
   /* 
-    ✅ in this hook, initialize state. For the initial state:
-    use the value saved in localStorage OR the initial value from the function parameters 
+    ✅ in this hook, use the useState hook. For the initial value for state:
+    use the value saved in localStorage OR the initialValue from the function parameters 
   */
+
   /* 
-   ✅ write a useEffect hook so that when a new value comes in, or when the key changes,
-   you can save the new value to localStorage
+   ✅ write a useEffect hook 
+   in the useEffect, when state is updated, save the state to localStorage
    don't forget the dependencies array!
   */
   useEffect(() => {});
@@ -16,29 +21,20 @@ export function useLocalStorage() {
   /* 
    ✅ return the same interface as useState:
    an array with state and a setState function
-   👀 return [state, setState]
   */
-}
-
-export default function App() {
-  return (
-    <div>
-      <h2>useLocalStorage can save string</h2>
-      <Form />
-      <hr />
-      <h2>useLocalStorage can save objects (Bonus)</h2>
-      <FormWithObject />
-    </div>
-  );
+  // 👀 return [state, setState]
 }
 
 function Form() {
-  // ✅ after implementing the useLocalStorage hook, update this form to use it instead of useState
+  // ✅ after implementing the useLocalStorage hook, replace useState with useLocalStorage
+  // don't forget to pass in both arguments (a key and an initialValue)
   const [name, setName] = useState("");
+  console.log(name);
+
   return (
     <form style={{ display: "flex", flexDirection: "column" }}>
       <label htmlFor="name">Name:</label>
-      <input value={name} onChange={e => setName(e.target.value)} />
+      <input type="text" value={name} onChange={e => setName(e.target.value)} />
       <h4>{name ? `Welcome, ${name}!` : "Enter your name"}</h4>
     </form>
   );
@@ -69,5 +65,17 @@ function FormWithObject() {
         onChange={handleChange}
       />
     </form>
+  );
+}
+
+export default function App() {
+  return (
+    <div>
+      <h2>useLocalStorage can save string</h2>
+      <Form />
+      <hr />
+      <h2>useLocalStorage can save objects (Bonus)</h2>
+      <FormWithObject />
+    </div>
   );
 }

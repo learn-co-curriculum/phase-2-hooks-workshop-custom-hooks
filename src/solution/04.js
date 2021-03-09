@@ -4,7 +4,9 @@ export function useLocalStorage(key, initialValue = null) {
   const [state, setState] = useState(localStorage.getItem(key) || initialValue);
 
   useEffect(() => {
-    localStorage.setItem(key, state);
+    if (state !== null) {
+      localStorage.setItem(key, state);
+    }
   }, [key, state]);
 
   return [state, setState];
@@ -23,18 +25,18 @@ export default function App() {
 }
 
 function Form() {
-  const [name, setName] = useLocalStorage("username", "");
+  const [name, setName] = useLocalStorage("_solution_1_username", "");
   return (
     <form style={{ display: "flex", flexDirection: "column" }}>
       <label htmlFor="name">Name:</label>
-      <input value={name} onChange={e => setName(e.target.value)} />
+      <input type="text" value={name} onChange={e => setName(e.target.value)} />
       <h4>{name ? `Welcome, ${name}!` : "Enter your name"}</h4>
     </form>
   );
 }
 
 function FormWithObject() {
-  const [formData, setFormData] = useLocalStorage("blog_post", {
+  const [formData, setFormData] = useState({
     title: "",
     content: "",
   });
