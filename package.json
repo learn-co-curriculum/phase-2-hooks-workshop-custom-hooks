@@ -10,23 +10,20 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@ihollander/workshop-app": "^0.0.5",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@ihollander/workshop-app": "^0.0.6",
     "codegen.macro": "^4.1.0",
-    "mdx-loader": "^3.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.2.1",
-    "web-vitals": "^1.0.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
     "@testing-library/react-hooks": "^5.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "jest-localstorage-mock": "^2.4.8",
-    "msw": "^0.27.0",
-    "raw-loader": "^4.0.2"
+    "msw": "^0.27.0"
   },
   "eslintConfig": {
     "extends": [
