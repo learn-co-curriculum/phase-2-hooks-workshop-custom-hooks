@@ -2,11 +2,10 @@
 
 ## Setup
 
-Clone and download this repo, and run `npm install`. Then:
-
-- Run `npm test` to run tests in one terminal tab
-- Open another terminal tab, and run `npm start` to run the project in the
-  browser
+- Fork and clone this repo
+- Run `npm install` in the repo directory
+- Run `npm start` to run the project in the browser
+- In another terminal, run `npm tests` to run the tests for all exercises
 
 In the tab that is running tests, you can press the `p` key to select a specific
 test file to run. For example, hitting `p` and then typing `01.js` will run the

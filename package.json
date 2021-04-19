@@ -10,7 +10,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@ihollander/workshop-app": "^0.0.6",
+    "@ihollander/workshop-app": "^0.0.9",
     "codegen.macro": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
