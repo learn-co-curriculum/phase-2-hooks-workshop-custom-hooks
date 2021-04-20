@@ -49,9 +49,9 @@ exercises.
 
 ## Workshop Videos
 
-To work on this workshop alone, I created a series of videos that walk through
-the setup for each exercise, as well as going through a solution. Check out
-these videos if you're working on this workshop on your own!
+This series of videos walks through the setup for each exercise, as well as
+going through a solution. Check out these videos if you're working on this
+workshop outside of a lecture setting:
 
 - [Watch this video to help get setup](https://youtu.be/92MdajVNToM)
 - [Workshop Playlist](https://www.youtube.com/playlist?list=PLc6AmvC5ZybzzDIuqsc7jDvDQEw8DgOjn)
