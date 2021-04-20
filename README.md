@@ -54,3 +54,5 @@ going through a solution. Check out these videos if you're working on this
 workshop outside of a lecture setting:
 
 - [Workshop Playlist](https://www.youtube.com/playlist?list=PLc6AmvC5ZybzzDIuqsc7jDvDQEw8DgOjn)
+
+You can view the solution code for this playlist on the `solution` branch.
