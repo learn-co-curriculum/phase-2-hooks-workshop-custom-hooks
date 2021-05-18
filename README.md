@@ -1,5 +1,10 @@
 # Custom Hooks Workshop
 
+This workshop is designed to walk you through a series of short exercises led by
+an instructor where you'll be introduced to some new concepts, experiment with
+code, and go over a solution. The setup for this workshop is different from a
+typical lab, so make sure to read all the steps below before getting started!
+
 ## Workshop Videos
 
 This series of videos walks through the setup for each exercise, as well as
