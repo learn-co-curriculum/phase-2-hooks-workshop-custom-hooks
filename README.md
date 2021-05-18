@@ -1,5 +1,15 @@
 # Custom Hooks Workshop
 
+## Workshop Videos
+
+This series of videos walks through the setup for each exercise, as well as
+going through a solution. Check out these videos if you're working on this
+workshop outside of a lecture setting:
+
+- [Workshop Playlist](https://www.youtube.com/playlist?list=PLc6AmvC5ZybzzDIuqsc7jDvDQEw8DgOjn)
+
+You can view the solution code for this playlist on the `solution` branch.
+
 ## Setup
 
 - Fork and clone this repo
@@ -46,13 +56,3 @@ solution tab.
 Some exercises have bonus challenges to do for extra credit, so if you finish
 early, give them a shot! Or save them for later when you want to revisit these
 exercises.
-
-## Workshop Videos
-
-This series of videos walks through the setup for each exercise, as well as
-going through a solution. Check out these videos if you're working on this
-workshop outside of a lecture setting:
-
-- [Workshop Playlist](https://www.youtube.com/playlist?list=PLc6AmvC5ZybzzDIuqsc7jDvDQEw8DgOjn)
-
-You can view the solution code for this playlist on the `solution` branch.
