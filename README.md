@@ -20,7 +20,7 @@ You can view the solution code for this playlist on the `solution` branch.
 - Fork and clone this repo
 - Run `npm install` in the repo directory
 - Run `npm start` to run the project in the browser
-- In another terminal, run `npm tests` to run the tests for all exercises
+- In another terminal, run `npm test` to run the tests for all exercises
 
 In the tab that is running tests, you can press the `p` key to select a specific
 test file to run. For example, hitting `p` and then typing `01.js` will run the
