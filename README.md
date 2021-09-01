@@ -1,5 +1,12 @@
 # Custom Hooks Workshop
 
+## Learning Goals
+
+- Understand the benefits of creating custom hooks
+- Create custom hooks
+
+## Introduction
+
 This workshop is designed to walk you through a series of short exercises led by
 an instructor where you'll be introduced to some new concepts, experiment with
 code, and go over a solution. The setup for this workshop is different from a
