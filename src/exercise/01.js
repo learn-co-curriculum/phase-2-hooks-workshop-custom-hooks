@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-/* ✅ create a new function called useDocumentTitle */
+/* ✅ create a new function called useDocumentTitle   */
 /* 👀 export function useDocumentTitle() {} */
 
 export default function Home() {
