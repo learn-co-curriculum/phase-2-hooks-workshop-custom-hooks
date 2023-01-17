@@ -1,3 +1,4 @@
+import "whatwg-fetch";
 import { renderHook } from "@testing-library/react-hooks/pure";
 import { server } from "../data/mocks/server";
 import { usePokemon } from "../exercise/02";

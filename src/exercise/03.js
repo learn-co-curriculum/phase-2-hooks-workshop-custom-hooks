@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import hasi from "../data/assets/hasi.png";
 
 export function useMouseCoordinates() {
   // ✅ get the setCoordinates function back too!
@@ -53,7 +52,7 @@ function Cursor({ x, y }) {
     height: "45px",
     width: "45px",
     borderRadius: "50%",
-    background: `url(${hasi})`,
+    background: "blue",
     backgroundSize: "cover",
     zIndex: 1,
   };

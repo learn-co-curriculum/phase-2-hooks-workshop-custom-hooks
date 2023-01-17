@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react-hooks";
 import { useLocalStorage } from "../exercise/04";
-// import { useLocalStorage } from "../solution/04";
+import "jest-localstorage-mock";
 
 beforeEach(() => {
   localStorage.clear();
