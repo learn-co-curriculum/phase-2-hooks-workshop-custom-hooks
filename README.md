@@ -33,6 +33,24 @@ In the tab that is running tests, you can press the `p` key to select a specific
 test file to run. For example, hitting `p` and then typing `01.js` will run the
 first test.
 
+**NOTE**: if you get the following error when running `npm start` or `npm test`:
+
+```console
+Module not found: Error: Can't resolve '@styled-icons/heroicons-outline/ExternalLink'
+```
+
+In VS Code, navigate to the following file in the `node_modules` folder:
+
+```console
+node_modules/@ihollander/workshop-app/dist/components/sandbox.js
+```
+
+Then comment out the following line of code (line 22):
+
+```js
+var _ExternalLink = require("@styled-icons/heroicons-outline/ExternalLink");
+```
+
 ## Instructions
 
 The `src` directory has two folders: one for the `solution` code, and one for
