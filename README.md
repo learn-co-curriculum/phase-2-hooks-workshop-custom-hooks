@@ -35,13 +35,13 @@ first test.
 
 **NOTE**: if you get the following error when running `npm start` or `npm test`:
 
-```console
+```text
 Module not found: Error: Can't resolve '@styled-icons/heroicons-outline/ExternalLink'
 ```
 
 In VS Code, navigate to the following file in the `node_modules` folder:
 
-```console
+```text
 node_modules/@ihollander/workshop-app/dist/components/sandbox.js
 ```
 
